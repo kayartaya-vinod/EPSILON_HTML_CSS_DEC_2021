@@ -1,0 +1,66 @@
+body {
+    background-color: azure;
+}
+
+/* example of element or tag selectors */
+h1,
+span {
+    color: white;
+    background-color: navy;
+}
+/* 
+
+<selector/s> <stylesheet>
+
+
+declaration: combination of a property-value pair;
+
+*/
+
+/* example of id selector */
+#list1 {
+    border: 1px solid black;
+}
+
+/* example of class selectors */
+
+.a {
+    color: red;
+}
+/* h3 with class="a" */
+h3.a {
+    background-color: pink;
+}
+/* li with class="a" */
+li.a {
+    background-color: khaki;
+}
+
+/* pseudo selectors */
+/* parent child relationshipt is indicated by ">" symbol */
+
+ul#list1 > li:hover {
+    background-color: tan;
+}
+
+#list1 > li:first-child {
+    font-weight: bolder;
+    font-style: italic;
+}
+
+#list1 > li:last-child {
+    color: blue;
+    background-color: lightblue;
+}
+
+#list1 > li:nth-child(5) {
+    color: green;
+    background-color: greenyellow;
+}
+
+#list2 > li:nth-child(even) {
+    background-color: khaki;
+}
+#list2 > li:nth-child(odd) {
+    background-color: tan;
+}

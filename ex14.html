@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS Border properties</title>
+
+        <style>
+            .box {
+                width: 150px;
+                height: 150px;
+                display: inline-block;
+            }
+
+            #d1 {
+                /* border-width: 2px;
+                border-style: solid;
+                border-color: black; */
+
+                border: 5px solid black;
+            }
+
+            #d2 {
+                border: 5px dashed black;
+            }
+            #d3 {
+                border: 5px dotted black;
+            }
+            #d4 {
+                border: 5px double black;
+            }
+
+            .bordered {
+                border: 5px solid black;
+            }
+
+            #d5 {
+                border-radius: 15px;
+            }
+            #d6 {
+                border-radius: 15px 25px 35px 45px;
+            }
+
+            #d7 {
+                border-radius: 0 50%;
+            }
+
+            #d8 {
+                border-bottom-right-radius: 50%;
+            }
+            #d9 {
+                border-radius: 50%;
+            }
+            img#img_animal {
+                border-radius: 50%;
+            }
+
+            h1 {
+                border-left: 10px solid red;
+                padding-left: 5px;
+            }
+
+            #d10 {
+                border-width: 10px;
+                border-image: url(https://www.w3schools.com/css/border.png) 30
+                    round;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS Border properties</h1>
+
+        <div class="box" id="d1"></div>
+        <div class="box" id="d2"></div>
+        <div class="box" id="d3"></div>
+        <div class="box" id="d4"></div>
+
+        <div class="box bordered" id="d5"></div>
+        <div class="box bordered" id="d6"></div>
+        <div class="box bordered" id="d7"></div>
+        <div class="box bordered" id="d8"></div>
+        <div class="box bordered" id="d9"></div>
+        <img
+            src="./assets/images/animal.jpeg"
+            alt="animal"
+            class="box"
+            id="img_animal"
+        />
+        <div id="d10" class="box bordered"></div>
+    </body>
+</html>

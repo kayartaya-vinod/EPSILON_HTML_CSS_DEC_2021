@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HTML Form elements</title>
+        <style>
+            div {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>HTML Form elements</h1>
+        <hr />
+
+        <form action="https://example.com/register.php">
+            <div>
+                <label for="uname">What's your name?</label>
+                <input
+                    type="text"
+                    name="user_name"
+                    id="uname"
+                    required
+                    minlength="5"
+                />
+            </div>
+            <div>
+                <label for="pwd">What's your secret code?</label>
+                <input type="password" name="password" id="pwd" />
+            </div>
+
+            <div>
+                <label>What kind of movies you like?</label>
+
+                <input
+                    type="checkbox"
+                    name="movie_genre"
+                    id="movie_genre_comedy"
+                    value="cmd"
+                />
+                <label for="movie_genre_comedy">Comedy</label>
+
+                <input
+                    type="checkbox"
+                    name="movie_genre"
+                    id="movie_genre_horror"
+                    value="hrrr"
+                />
+                <label for="movie_genre_horror">Horror</label>
+
+                <input
+                    type="checkbox"
+                    name="movie_genre"
+                    id="movie_genre_Thriller"
+                    value="thrllr"
+                />
+                <label for="movie_genre_Thriller">Thriller</label>
+
+                <input
+                    type="checkbox"
+                    name="movie_genre"
+                    id="movie_genre_Romance"
+                    value="rmnc"
+                />
+                <label for="movie_genre_Romance">Romance</label>
+            </div>
+
+            <div>
+                <label>What's your gender?</label>
+
+                <input type="radio" name="gender" id="gender_m" value="M" />
+                <label for="gender_m">Male</label>
+
+                <input type="radio" name="gender" id="gender_f" value="F" />
+                <label for="gender_f">Female</label>
+
+                <input type="radio" name="gender" id="gender_o" value="O" />
+                <label for="gender_o">Other</label>
+            </div>
+
+            <div>
+                <label for="user_age">How old are you?</label>
+                <input
+                    type="number"
+                    name="user_age"
+                    id="user_age"
+                    value="48"
+                    min="18"
+                    max="58"
+                />
+                years.
+            </div>
+
+            <div>
+                <label for="search_txt">Search...</label>
+                <input type="search" name="search_txt" id="search_txt" />
+            </div>
+
+            <div>
+                <label for="dob">What's your date of birth?</label>
+                <input type="date" name="dob" id="dob" />
+            </div>
+
+            <div>
+                <label for="fav_month">Select your favorite month: </label>
+                <input
+                    type="month"
+                    name="fav_month"
+                    id="fav_month"
+                    value="2021-01"
+                />
+            </div>
+
+            <div>
+                <label for="fav_weekday">Select your favorite weekday: </label>
+                <input type="week" name="fav_weekday" id="fav_weekday" />
+            </div>
+
+            <div>
+                <label for="user_country">Which country are you from?</label>
+                <!-- try with "size" and "multiple" attributes -->
+                <select name="user_country" id="user_country">
+                    <option value="-1"></option>
+                    <option value="IN">India</option>
+                    <option value="USA">USA</option>
+                    <option value="CH">China</option>
+                    <option value="JA">Japan</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="usr_cntry_1">Which country are you from?</label>
+
+                <select name="usr_cntry_1" id="usr_cntry_1">
+                    <option value="-1">--SELECT--</option>
+                    <optgroup label="Asia">
+                        <option>India</option>
+                        <option>China</option>
+                        <option>Bangladesh</option>
+                        <option>Pakistan</option>
+                    </optgroup>
+
+                    <optgroup label="Europe">
+                        <option>England</option>
+                        <option>Germany</option>
+                        <option>France</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div>
+                <label for="descr">Describe yourself: </label>
+                <br />
+                <textarea
+                    name="descr"
+                    id="descr"
+                    cols="50"
+                    rows="10"
+                ></textarea>
+            </div>
+
+            <div>
+                <button>
+                    <img
+                        src="https://www.freeiconspng.com/thumbs/submit-button-png/submit-button-png-28.png"
+                        alt="submit to server"
+                        width="75"
+                    />
+                </button>
+
+                <input
+                    type="image"
+                    src="https://www.freeiconspng.com/thumbs/submit-button-png/submit-button-png-28.png"
+                    alt="submit to server"
+                    width="75"
+                />
+                <input type="submit" value="Submit" />
+
+                <input type="reset" value="Reset" />
+            </div>
+        </form>
+    </body>
+</html>
