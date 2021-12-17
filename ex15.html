@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Styling lists</title>
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap"
+            rel="stylesheet"
+        />
+
+        <style>
+            @font-face {
+                font-family: 'FromEpsilon';
+                src: url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2);
+            }
+
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: 'Architects Daughter', cursive !important;
+            }
+
+            h1 {
+                font-family: FromEpsilon;
+            }
+
+            .container {
+                width: 1200px;
+                background-color: #fff;
+                height: 100vh;
+                margin: auto;
+            }
+
+            .list-group {
+                padding: 0;
+                list-style: none;
+                width: 300px;
+            }
+
+            .list-group > li {
+                border-left: 1px solid #ddd;
+                border-top: 1px solid #ddd;
+                border-right: 1px solid #ddd;
+                margin: 0;
+                padding: 10px;
+            }
+            .list-group > li:last-child {
+                border-bottom: 1px solid #ddd;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+            }
+            .list-group > li:first-child {
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                background-color: #ddd;
+            }
+            .list-group > li:hover {
+                background-color: #eee;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Styling lists</h1>
+            <h2>My name is Vinod</h2>
+            <hr />
+
+            <ul class="list-group">
+                <li>Kayartaya Vinod (vinod@vinod.co)</li>
+                <li>ex01.html</li>
+                <li>ex02.html</li>
+                <li>ex03.html</li>
+                <li>ex04.html</li>
+                <li>ex05.html</li>
+                <li>ex06.html</li>
+                <li>ex07.html</li>
+                <li>ex08.html</li>
+                <li>ex09.html</li>
+                <li>ex10.html</li>
+            </ul>
+        </div>
+    </body>
+</html>

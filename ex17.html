@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Styling buttons</title>
+        <link rel="stylesheet" href="./default.css" />
+
+        <style>
+            .btn {
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                text-decoration: none;
+                padding: 10px;
+                cursor: pointer;
+                display: inline-block;
+                line-height: 1.5;
+                background-color: transparent;
+                font-weight: 500 !important;
+            }
+
+            .btn.btn-success {
+                background-color: green;
+                color: white;
+            }
+            .btn.btn-danger {
+                background-color: red;
+                color: white;
+            }
+            .btn.btn-primary {
+                background-color: hsl(240, 22%, 50%);
+                color: white;
+            }
+            .btn.btn-warning {
+                background-color: #ffa600;
+            }
+            .btn.btn-info {
+                background-color: #008cff;
+                color: white;
+            }
+            .btn.btn-link {
+                border: none;
+                text-decoration: underline;
+                color: #07f;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Styling buttons</h1>
+        </div>
+        <div class="container">
+            <button class="btn btn-success">Button 1</button>
+            <button class="btn btn-danger">Button 2</button>
+            <button class="btn btn-primary">Button 3</button>
+            <button class="btn btn-warning">Button 4</button>
+            <button class="btn btn-info">Button 5</button>
+            <button class="btn btn-link">Button 6</button>
+
+            <a class="btn btn-success" href="//vinod.co">Visit my site</a>
+        </div>
+    </body>
+</html>

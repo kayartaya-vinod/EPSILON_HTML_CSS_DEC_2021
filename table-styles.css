@@ -1,0 +1,35 @@
+table.tbl {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table.tbl,
+table.tbl th,
+table.tbl td {
+    border: 1px solid #64649b;
+}
+
+table.tbl th,
+table.tbl td {
+    border: 1px solid #64649b;
+    padding: 10px;
+}
+
+table.tbl th {
+    font-weight: bolder;
+    font-size: 1.1em;
+    font-style: italic;
+}
+
+table.tbl.tbl-dark-header th {
+    background-color: #64649b;
+    color: #fff;
+}
+
+table.tbl.tbl-striped > tbody > tr:nth-child(odd) > td {
+    background-color: #ebeef9;
+}
+
+table.tbl.tbl-hover > tbody > tr:hover > td {
+    background-color: #eee;
+}
